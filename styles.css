@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .main-container{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    color: grey;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-link {
+    background-color: #f7dc6f;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+    }
+  
+    .nav-links a {
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }
+
+  .contact{
+    color: black;
+  }
+
+  .nav-links a:first-child {
+    color: #2c3e50; /* Dark color of your choice */
+    font-weight: bold;
+  }
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    background-color: #204e3a; /* Dark green background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .hero-left {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .hero-right {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+  }
+
+ /* Add this style to adjust letter-spacing in the hero section */
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px; /* Adjust the value as needed */
+    font-weight: bold;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px; /* Adjust the value as needed */
+  }
+  
+
+
+  .hire-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f7dc6f; /* White button background color */
+    color: black; /* Dark green button text color */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    letter-spacing: 1px;
+  }
+
+  .hire-button:hover {
+    background-color: #204e3a; /* Dark green hover background color */
+    color: #fff; /* White hover text color */
+  }
+
+  .hero-image img {
+    width: 385px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+
+  .about-me-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-me-container .content{
+    width: 600px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    color: grey;
+    line-height: 1.5;
+  }
+
+  .about-me-container .content h2{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .my-projects-section {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .section-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .section-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .project-images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-image {
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+
+  .my-skills-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.my-skills-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.my-skills-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.skill-card {
+    display: inline-block;
+    width: 400px;
+    margin: 0 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.skill-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.skill-details {
+    padding: 15px;
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-description {
+    font-size: 14px;
+    color: #444;
+}
+
+.main-section {
+  background-color: #204e3a; /* Very dark green */
+  color: #fff; /* White text */
+  padding: 50px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.left-section {
+   /* Dark green */
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.left-div {
+  background-color: #287051;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.right-div {
+  margin-top: 10px;
+  background-color: #287051;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.right-section {
+  flex: 2;
+  
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+

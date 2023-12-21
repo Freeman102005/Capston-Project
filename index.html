@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Personal Website</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo-container">
+              <img class="logo" src="images/pic.jpg" alt="Logo">
+              <span class="logo-text">Francis Ojapa Emmanuel</span>
+            </div>
+            <div class="nav-links">
+              <a href="#">Home</a>
+              <a href="#about">About</a>
+              <a href="#project">My Projects</a>
+              <a href="#">My Skills</a>
+              <a href="#" class="contact-link contact">Contact</a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="hero-section">
+            <div class="hero-left">
+              <div class="hero-title">Hey, My name is Francis Ojapa Emmanuel, Frontend Developer</div>
+              <div class="hero-description">I'm a Front-end developer based in Kano State Nigeria.I specialize in responsive web design.</div>
+              <a href="#" class="hire-button">HIRE ME &rarr;</a>
+            </div>
+        
+            <div class="hero-right">
+              <div class="hero-image">
+                <img src="images/ss.jpg" alt="Frontend Developer">
+              </div>
+            </div>
+          </div>
+
+          <div class="about-me-container" id="about">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>
+                  I'm a motivated and hardworking individual with a passion for software development. I have good understanding of software development concepts and with strong eagerness to learn new technologies. I recently graduated with a professional certification from the prestigious eHealt Academy and this was possible due to my strong passion for software development.    
+            </div>
+          </div>
+
+          <div class="my-projects-section">
+            <div class="section-heading">My Projects</div>
+            <div class="section-description">
+              Here you can find some of the projects I've been working on. Feel free to explore!
+              <br>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, porro!
+            </div>
+        
+            <div class="project-images">
+              <div class="project-image">
+                <img src="images/project1.png" alt="Project 1">
+              </div>
+              <div class="project-image">
+                <img src="images/project2.jpg" alt="Project 2">
+              </div>
+              <div class="project-image">
+                <img src="images/project3.png" alt="Project 3">
+              </div>
+            </div>
+          </div>
+
+          <div class="my-skills-container">
+            <div class="my-skills-title">My Skills</div>
+            <div class="my-skills-description">
+              <p> Proficiency in HTML, CSS, and JavaScript, the core languages of front-end development. <br>I have Strong understanding of responsive web design principles and the ability to create<br> mobile-friendly layouts.
+              </p>
+           
+            </div>
+    
+            <div class="skill-card">
+                <img src="images/html.png" alt="Skill 1" class="skill-image">
+                <div class="skill-details">
+                    <div class="skill-title">HTML</div>
+                    <div class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta magnam cumque quas officiis expedita accusamus tempora optio nostrum debitis.</div>
+                </div>
+            </div>
+    
+            <div class="skill-card">
+                <img src="images/css.png" alt="Skill 2" class="skill-image">
+                <div class="skill-details">
+                    <div class="skill-title">CSS</div>
+                    <div class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta magnam cumque quas officiis expedita accusamus tempora optio nostrum debitis.</div>
+                </div>
+            </div>
+    
+            <div class="skill-card">
+                <img src="images/javascript.png" alt="Skill 3" class="skill-image">
+                <div class="skill-details">
+                    <div class="skill-title">JAVASCRIPT</div>
+                    <div class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta magnam cumque quas officiis expedita accusamus tempora optio nostrum debitis.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+
+          <div class="right-section">
+            <h2>Have a project idea. <br> Let's work together!</h2>
+            <p style="color: rgb(187, 183, 183)">I will be delighted to work with like minds, as i seek to share my knowledge as well as gaining some <br> if not more.<br></p>
+          </div>
+
+
+          <div class="left-section">
+            <div class="left-div">
+              <small style="color: rgb(187, 183, 183);">CHAT WITH ME</small>
+              <p>francisojapa@gmail.com</p>
+            </div>
+            <div class="right-div">
+              <small style="color: rgb(187, 183, 183);">CALL ME</small>
+              <p>+234-7018794152</p>
+            </div>
+          </div>
+      
+        </div>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                }
+        
+                footer {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                }
+        
+                .column {
+                    margin: 10px;
+                }
+        
+                .left-column {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                }
+        
+                .circle-image {
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    overflow: hidden;
+                    margin-right: 10px;
+                }
+        
+                .circle-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+        
+                .address {
+                    font-size: 14px;
+                    line-height: 1.4;
+                }
+        
+                .navigation, .social-links {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+        
+                .navigation li, .social-links li {
+                    margin-bottom: 5px;
+                }
+        
+                .navigation a, .social-links a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            </style>
+        </head>
+        <body>
+        
+        <footer style="background-color: #fff;  color: grey;">
+            <div class="left-column">
+              <table>
+                <tr>
+                  <td class="left-column">
+                    <div class="circle-image">
+                      <img src="images/pic.jpg" alt="Example Image">
+                  </div>
+                  <p style="color: black; font-weight: bold;">Francis Ojapa Emmanuel</p>
+  
+                  </td>
+                  </tr>
+                        <tr>
+                          <td>
+                            <p>
+                              Software development is my hobby!
+                            </p>
+                          </td>
+                        </tr>
+                
+              
+              </table>
+                
+            </div>
+        
+            <div class="column">
+                <ul class="navigation" style="margin-right: 200px; line-height: 30px;">
+                    <li><a href="#" style="color: grey;">Home</a></li>
+                    <li><a href="#" style="color: grey;">About</a></li>
+                    <li><a href="#" style="color: grey;">My Projects</a></li>
+                    <li><a href="#" style="color: grey;">My Skills</a></li>
+                </ul>
+            </div>
+        
+            <div class="column">
+                <ul class="social-links" style="margin-right: 200px; line-height: 30px;">
+                    <li><a href="#" style="color: grey;">Facebook</a></li>
+                    <li><a href="#" style="color: grey;">Twitter</a></li>
+                    <li><a href="#" style="color: grey;">Instagram</a></li>
+                    <li><a href="#" style="color: grey;">CodePen</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <hr style="color: grey; opacity: .2;">
+
+        <div class="copyright" style="color: grey; padding: 20px; ">
+          <center>
+            All content &copy; 2023 | Alrights reserved
+          </center>
+        </div>
+        
+        </body>
+        </html>
+        
+    </div>
+
+
+<!-- Your page content goes here -->
+
+</body>
+</html>
